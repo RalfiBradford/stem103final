@@ -31,7 +31,7 @@ def enemy_attack(min_dmg, max_dmg):
 
 # Function to generate healing amount
 def player_heal():
-    return random.randint(2, 9)
+    return random.randint(4, 10)
 
 # Function to check if someone has won
 def check_winner(player_hp, enemy_hp, enemy_name):
@@ -72,21 +72,21 @@ while True:
 
     choice = input("Enter 1 or 2: ")
 
-    print("\n-------------------------------------------")
+    print("\n###########################################")
 
     # Player attack
     if choice == "1":
         print()
         damage = player_attack()
         enemy_hp -= damage
-        print("-- You hit", enemy_name, "for", damage, "damage! --")
+        print("### You hit", enemy_name, "for", damage, "damage! ###")
 
     # Player heal
     elif choice == "2":
         print()
         heal = player_heal()
         player_hp += heal
-        print("-- You heal for", heal, "HP! --")
+        print("### You heal for", heal, "HP! ###")
 
     else:
         print("\n*** INVALID CHOICE! ***\nPlease enter 1 to Attack or 2 to Heal.\n")
@@ -101,7 +101,7 @@ while True:
     # Enemy attacks
     damage = enemy_attack(enemy_min, enemy_max)
     player_hp -= damage
-    print("--", enemy_name, "hits you for", damage, "damage! --")
+    print("###", enemy_name, "hits you for", damage, "damage! ###")
     print()
 
     # Check if player died
@@ -109,4 +109,4 @@ while True:
         break
     
     # Clear break between turns
-    print("-------------------------------------------\n")
+    print("###########################################\n")
