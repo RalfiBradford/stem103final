@@ -9,7 +9,7 @@ import random
 def create_enemy():
     chance = random.randint(1, 10)  # 1 in 10 chance for named mob
     if chance == 1:
-        enemy_name = "Gorath the Mighty"
+        enemy_name = "Fippy Darkpaw"
         enemy_hp = 50  # Stronger HP
         enemy_min_dmg = 5
         enemy_max_dmg = 10
