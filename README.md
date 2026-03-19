@@ -22,3 +22,8 @@ I tested the program by running it multiple times and trying different inputs. I
 Overall, I learned how to combine several beginner Python concepts into one working project. I practiced using variables to store health and damage values, functions to organize repeated actions, if/else statements to control combat choices, and loops to keep the game running until the battle ended. This project helped me understand how individual programming concepts can work together in a complete program.
 
 The new Python concept I explored was the `random` library. I used `random.choice()` to select random enemies and `random.randint()` to create random damage and healing amounts. One challenge I faced was balancing the combat so the player would not always win too easily. I fixed that by adjusting enemy health and damage values and adding a stronger named enemy. Another challenge was making the output easier to read, which I improved by adding spacing, separators, and clearer combat formatting.
+
+## References
+- Python documentation (random library)
+- Class notes and examples
+- Google searches for basic Python syntax
